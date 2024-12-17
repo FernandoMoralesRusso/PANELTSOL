@@ -156,7 +156,7 @@ body {
     .linktree-text {
         font-size: 16px; /* Reducir el tamaño de fuente */
         padding: 10px 0;
-        bottom: 50px; /* Ajustar el espacio para dispositivos móviles */
+        bottom: 120px; /* Ajustar el espacio para dispositivos móviles */
     }
 }
 
