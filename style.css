@@ -96,7 +96,7 @@ body {
     width: 100%; /* Asegura que ocupe todo el ancho */
     box-sizing: border-box; /* Para que el padding no afecte el ancho total */
     position: absolute;
-    bottom: 170px;  /* Lo posiciona 170px desde la parte inferior de la página */
+    bottom: 160px;  /* Lo posiciona 170px desde la parte inferior de la página */
     left: 50%;     /* Centrado horizontal */
     transform: translateX(-50%);  /* Ajusta para que esté perfectamente centrado */
 }
