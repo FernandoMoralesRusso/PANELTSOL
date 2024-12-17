@@ -100,6 +100,10 @@ body {
     .logo {
         width: 150px; 
     }
+    
+    .logo-container {
+    top: 95px; /* Ajuste exclusivo para dispositivos móviles */
+    }
 
     .section-title {
         font-size: 20px;
