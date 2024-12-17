@@ -155,8 +155,8 @@ body {
     /* Alineación del texto Linktree en dispositivos móviles */
     .linktree-text {
         font-size: 16px; /* Reducir el tamaño de fuente */
-        padding: 10px 0;
-        bottom: 120px; /* Ajustar el espacio para dispositivos móviles */
+        padding: 10px 5px;
+        bottom: 200px; /* Ajustar el espacio para dispositivos móviles */
     }
 }
 
