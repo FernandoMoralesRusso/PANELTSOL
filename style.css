@@ -90,11 +90,11 @@ body {
     .container {
         width: 78%;        
         max-width: none;  
-        padding-top: 32px;
+        padding-top: 12px;
         padding-bottom: 32px;
         padding-left: 28px;
         padding-right: 28px;
-        top: 15px;
+        
     }
 
     .logo {
