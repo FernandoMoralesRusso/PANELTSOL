@@ -7,6 +7,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    position: relative; /* Para que los elementos absolutos funcionen con respecto a este contenedor */
 }
 
 .container {
@@ -85,15 +86,15 @@ body {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
+/* Linktree texto */
 .linktree-text {
     font-size: 18px;
     color: #e7e7e7;
     line-height: 1.5;
-    text-align: center; /* Centra el texto horizontalmente */
-    padding: 10px 0;    /* Añade algo de espacio superior e inferior */
-    width: 100%;        /* Asegura que ocupe todo el ancho */
+    text-align: center;
+    padding: 10px 0;
+    width: 100%; /* Asegura que ocupe todo el ancho */
     box-sizing: border-box; /* Para que el padding no afecte el ancho total */
-
     position: absolute;
     bottom: 160px;  /* Lo posiciona 70px desde la parte inferior de la página */
     left: 50%;     /* Centrado horizontal */
@@ -101,15 +102,15 @@ body {
 }
 
 .linktree-text a {
-    display: inline-block; /* Asegura que la imagen esté en línea con el texto */
-    vertical-align: middle; /* Centra la imagen verticalmente */
+    display: inline-block;
+    vertical-align: middle;
 }
 
 .linktree-image {
     width: 100px; /* Ajusta el tamaño de la imagen según lo desees */
     height: auto;
     margin: 0 5px; /* Añade espacio a los lados de la imagen */
-    vertical-align: middle; /* Centra la imagen con respecto al texto */
+    vertical-align: middle;
 }
 
 .linktree-text a {
@@ -123,25 +124,23 @@ body {
     color: #005A44;
 }
 
-
 /* Estilos para dispositivos móviles */
 @media (max-width: 768px) {
     .container {
         width: 78%;        
-        max-width: none;  
+        max-width: none;
         padding-top: 12px;
         padding-bottom: 32px;
         padding-left: 28px;
         padding-right: 28px;
-        
     }
 
     .logo {
         width: 150px; 
     }
-    
+
     .logo-container {
-    top: 95px; /* Ajuste exclusivo para dispositivos móviles */
+        top: 95px; /* Ajuste exclusivo para dispositivos móviles */
     }
 
     .section-title {
@@ -152,6 +151,13 @@ body {
         width: 145px;
         height: auto;
     }
+
+    /* Alineación del texto Linktree en dispositivos móviles */
+    .linktree-text {
+        font-size: 16px; /* Reducir el tamaño de fuente */
+        padding: 10px 0;
+        bottom: 50px; /* Ajustar el espacio para dispositivos móviles */
+    }
 }
 
 @media (max-width: 480px) {
@@ -159,11 +165,9 @@ body {
         font-size: 16px;
         padding: 12px 15px;
     }
-}
-@media (max-width: 480px) {
-    .control-panel {
-        font-size: 16px;
-        padding: 12px 15px;
+
+    .linktree-text {
+        font-size: 14px; /* Ajuste de tamaño para pantallas más pequeñas */
+        margin-top: 30px;
     }
 }
-
