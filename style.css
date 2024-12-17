@@ -90,7 +90,11 @@ body {
     .container {
         width: 78%;        
         max-width: none;  
-        padding: 30px;
+        padding-top: 32px;
+        padding-bottom: 32px;
+        padding-left: 28px;
+        padding-right: 28px;
+        top: 15px;
     }
 
     .logo {
@@ -102,7 +106,7 @@ body {
     }
 
     .store-logo {
-        width: 120px;
+        width: 145px;
         height: auto;
     }
 }
