@@ -85,6 +85,45 @@ body {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
+.linktree-text {
+    font-size: 18px;
+    color: #e7e7e7;
+    line-height: 1.5;
+    text-align: center; /* Centra el texto horizontalmente */
+    padding: 10px 0;    /* Añade algo de espacio superior e inferior */
+    width: 100%;        /* Asegura que ocupe todo el ancho */
+    box-sizing: border-box; /* Para que el padding no afecte el ancho total */
+
+    position: absolute;
+    bottom: 160px;  /* Lo posiciona 70px desde la parte inferior de la página */
+    left: 50%;     /* Centrado horizontal */
+    transform: translateX(-50%);  /* Ajusta para que esté perfectamente centrado */
+}
+
+.linktree-text a {
+    display: inline-block; /* Asegura que la imagen esté en línea con el texto */
+    vertical-align: middle; /* Centra la imagen verticalmente */
+}
+
+.linktree-image {
+    width: 100px; /* Ajusta el tamaño de la imagen según lo desees */
+    height: auto;
+    margin: 0 5px; /* Añade espacio a los lados de la imagen */
+    vertical-align: middle; /* Centra la imagen con respecto al texto */
+}
+
+.linktree-text a {
+    color: #007A5E;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.linktree-text a:hover {
+    color: #005A44;
+}
+
+
 /* Estilos para dispositivos móviles */
 @media (max-width: 768px) {
     .container {
@@ -121,3 +160,10 @@ body {
         padding: 12px 15px;
     }
 }
+@media (max-width: 480px) {
+    .control-panel {
+        font-size: 16px;
+        padding: 12px 15px;
+    }
+}
+
